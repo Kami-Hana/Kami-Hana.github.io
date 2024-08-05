@@ -11,7 +11,6 @@ type: page
 
 ### 关于我(Who am I?)
 　　古明地 紙花（こめいじ かみはな）
-
     仅此而已
 
 ### 联系我(How to contact me?)
