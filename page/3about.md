@@ -11,7 +11,7 @@ type: page
 
 ## 关于我
 
-<!-- <iframe src="https://githubbadge.appspot.com/gaohaoyang?s=1" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe> -->
+
 
 
 
@@ -24,6 +24,8 @@ type: page
 * [Facebook](https://www.facebook.com/gaohaoyang.water)
 * [豆瓣](https://www.douban.com/people/42525035/)
 * [豆瓣音乐人-浩阳的小站](https://site.douban.com/haoyangaiyinyue/)
+
+
 
 ## 友情链接
 
