@@ -49,7 +49,7 @@ export const siteConfig: SiteConfig = {
 				"/assets/desktop-banner/Mutsumi.png",
 			], // 桌面横幅图片
 			mobile: [
-				"/assets/mobile-banner/Mutsumi.jpg",
+				"/assets/mobile-banner/Mutsumi.png",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
