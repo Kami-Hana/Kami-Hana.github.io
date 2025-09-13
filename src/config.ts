@@ -225,7 +225,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/mutsumi.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	avatar: "assets/images/Mutsumi.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "折一只纸鹭",
 	bio: "黄瓜田种不出你的白祥",
 	links: [
