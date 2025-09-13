@@ -182,6 +182,11 @@ export type AnnouncementConfig = {
 
 export type MusicPlayerConfig = {
 	enable: boolean; // 是否启用音乐播放器功能
+    mode?: string; // 音乐播放器模式，支持 'local' 和 'meting'
+    meting_api?: string; // Meting API 地址
+    id?: string; // Meting API 的 ID
+    server?: string; // Meting API 的服务器，有的meting的api源支持更多平台，一般来说，netease=网易云音乐，tencent=QQ音乐，kugou=酷狗音乐，xiami=虾米音乐，baidu=百度音乐
+    type?: string; // Meting API 的类型
 };
 
 export type FooterConfig = {
