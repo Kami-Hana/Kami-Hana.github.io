@@ -110,11 +110,14 @@ export const siteConfig: SiteConfig = {
 	// 字体配置
 	font: {
 		zenMaruGothic: {
-			enable: true, // 启用全局圆体适合日语和英语，对中文适配一般
+			enable: false,  // 启用全局圆体适合日语和英语，对中文适配一般
 		},
 		hanalei: {
-			enable: false, // 启用 Hanalei 字体作为全局字体，适合中文去使用
+			enable: false,  // 启用 Hanalei 字体作为全局字体，适合中文去使用
 		},
+        siyuanHei:{
+            enable: true,   // 启用 思源黑体 字体作为全局字体，适合中文使用
+        }
 	},
 	showLastModified: true, // 控制“上次编辑”卡片显示的开关
 };
@@ -467,10 +470,10 @@ export const widgetConfigs = {
 } as const;
 
 export const umamiConfig = {
-	enabled: false, // 是否显示Umami统计
+	enabled: true, // 是否显示Umami统计
 	apiKey: "api_XXXXXXXXXX", // 你的API密钥
-	baseUrl: "https://api.umami.is", // Umami Cloud API地址
+	baseUrl: "https://us.umami.is/share/XgKv8dQVZxedsqOl", // Umami Cloud API地址
 	scripts: `
-<script defer src="XXXX.XXX" data-website-id="ABCD1234"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="4fd92781-67e8-4c73-bb4e-398ce7d77234"></script>
   `.trim(), // 上面填你要插入的Script,不用再去Layout中插入
 } as const;
