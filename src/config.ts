@@ -45,12 +45,8 @@ export const siteConfig: SiteConfig = {
 
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
-			desktop: [
-				"/assets/desktop-banner/Mutsumi.png",
-			], // 桌面横幅图片
-			mobile: [
-				"/assets/mobile-banner/Mutsumi.png",
-			], // 移动横幅图片
+			desktop: ["/assets/desktop-banner/Mutsumi.png"], // 桌面横幅图片
+			mobile: ["/assets/mobile-banner/Mutsumi.png"], // 移动横幅图片
 		}, // 使用本地横幅图片
 
 		position: "center", // 等同于 object-position，仅支持 'top', 'center', 'bottom'。默认为 'center'
@@ -75,9 +71,9 @@ export const siteConfig: SiteConfig = {
 			title: "私が喋ると......", // 主页横幅主标题
 
 			subtitle: [
-                "睦ちゃんはしんじゃったよ",
+				"睦ちゃんはしんじゃったよ",
 				"睦ちゃんのせいだよ",
-                "私は勉強楽しいって思ったこと一度もない",
+				"私は勉強楽しいって思ったこと一度もない",
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
@@ -106,31 +102,17 @@ export const siteConfig: SiteConfig = {
 	favicon: [
 		// 留空以使用默认 favicon
 		{
-		  src: '/favicon/icon.jpg',    // 图标文件路径
-		  theme: 'light',              // 可选，指定主题 'light' | 'dark'
-		  sizes: '32x32',              // 可选，图标大小
-		}
+			src: "/favicon/icon.jpg", // 图标文件路径
+			theme: "light", // 可选，指定主题 'light' | 'dark'
+			sizes: "32x32", // 可选，图标大小
+		},
 	],
 };
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	enable: true, // 启用全屏壁纸功能,非Banner模式下生效
 	src: {
-		desktop: [
-			"/assets/desktop-banner/1.webp",
-			"/assets/desktop-banner/2.webp",
-			"/assets/desktop-banner/3.webp",
-			"/assets/desktop-banner/4.webp",
-			"/assets/desktop-banner/5.webp",
-			"/assets/desktop-banner/6.webp",
-		], // 桌面横幅图片
-		mobile: [
-			"/assets/mobile-banner/1.webp",
-			"/assets/mobile-banner/2.webp",
-			"/assets/mobile-banner/3.webp",
-			"/assets/mobile-banner/4.webp",
-			"/assets/mobile-banner/5.webp",
-			"/assets/mobile-banner/6.webp",
-		], // 移动横幅图片
+		desktop: ["/assets/desktop-banner/Mutsumi.png"], // 桌面横幅图片
+		mobile: ["/assets/mobile-banner/Mutsumi.png"], // 移动横幅图片
 	}, // 使用本地横幅图片
 	position: "center", // 壁纸位置，等同于 object-position
 	carousel: {
@@ -146,9 +128,8 @@ export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,
-        LinkPreset.Friends,
-
-        // LinkPreset.Diary,
+		LinkPreset.Friends,
+		LinkPreset.Diary,
 
 		// 支持自定义导航栏链接,并且支持多级菜单,3.1版本新加
 		// {
@@ -246,8 +227,8 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa6-brands:github",
 			url: "https://github.com/Kami-Hana",
 		},
-        
-        // {
+
+		// {
 		// 	name: "Discord",
 		// 	icon: "fa6-brands:discord",
 		// 	url: "https://discord.gg/MqW6TcQtVM",
@@ -295,7 +276,7 @@ export const announcementConfig: AnnouncementConfig = {
 
 export const musicPlayerConfig: MusicPlayerConfig = {
 	enable: true, // 启用音乐播放器功能
-    mode: "local", // 音乐播放器模式，支持 'local' 和 'meting'
+	mode: "local", // 音乐播放器模式，支持 'local' 和 'meting'
 };
 
 export const footerConfig: FooterConfig = {
