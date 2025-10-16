@@ -1,4 +1,3 @@
-import { factory } from "typescript";
 import type {
 	AnnouncementConfig,
 	CommentConfig,
@@ -14,7 +13,6 @@ import type {
 	SiteConfig,
 } from "./types/config";
 import { LinkPreset } from "./types/config";
-import { getTranslateLanguageFromConfig } from "./utils/language-utils";
 
 // 移除i18n导入以避免循环依赖
 
@@ -31,15 +29,15 @@ export const siteConfig: SiteConfig = {
 		hue: 210, // 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
 		fixed: false, // 对访问者隐藏主题色选择器
 	},
-	translate: {
-		enable: false, // 启用翻译功能
-		service: "client.edge", // 使用 Edge 浏览器翻译服务
-		defaultLanguage: getTranslateLanguageFromConfig(SITE_LANG), // 根据站点语言自动设置默认翻译语言
-		showSelectTag: false, // 不显示默认语言选择下拉菜单，使用自定义按钮
-		autoDiscriminate: true, // 自动检测用户语言
-		ignoreClasses: ["ignore", "banner-title", "banner-subtitle"], // 翻译时忽略的 CSS 类名
-		ignoreTags: ["script", "style", "code", "pre"], // 翻译时忽略的 HTML 标签
+
+	bangumi: {
+		userId: "your-bangumi-id", // 在此处设置你的Bangumi用户ID，可以设置为 "sai" 测试
 	},
+
+	anime: {
+		mode: "local", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置
+	},
+
 	banner: {
 		enable: true, // 是否启动Banner壁纸模式
 
@@ -99,6 +97,7 @@ export const siteConfig: SiteConfig = {
 		enable: true, // 启用目录功能
 		depth: 3, // 目录深度，1-6，1 表示只显示 h1 标题，2 表示显示 h1 和 h2 标题，依此类推
 	},
+	generateOgImages: false, // 启用生成OpenGraph图片功能,注意开启后要渲染很长时间，不建议本地调试的时候开启
 	favicon: [
 		// 留空以使用默认 favicon
 		{
@@ -107,6 +106,17 @@ export const siteConfig: SiteConfig = {
 			sizes: "32x32", // 可选，图标大小
 		},
 	],
+
+	// 字体配置
+	font: {
+		zenMaruGothic: {
+			enable: true, // 启用全局圆体适合日语和英语，对中文适配一般
+		},
+		hanalei: {
+			enable: false, // 启用 Hanalei 字体作为全局字体，适合中文去使用
+		},
+	},
+	showLastModified: true, // 控制“上次编辑”卡片显示的开关
 };
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	enable: true, // 启用全屏壁纸功能,非Banner模式下生效
@@ -234,12 +244,6 @@ export const profileConfig: ProfileConfig = {
 		// 	url: "https://discord.gg/MqW6TcQtVM",
 		// },
 	],
-	// Umami统计部份，记得在layout插入Umami的head标签
-	umami: {
-		enable: true, // 是否显示umami统计
-		shareId: "8jsoFCoiwNQHL2Cg", //填入共享URL最后面那一串  比如：https://eu.umami.is/api/share/2dKQ5T0WrUn6AYtr 你就填入2dKQ5T0WrUn6AYtr
-		region: "us", //Umami有两个区域，按需选择即可  比如：https://eu.umami.is 你就填入eu
-	},
 };
 
 export const licenseConfig: LicenseConfig = {
@@ -351,13 +355,13 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			// 是否启用该组件
 			enable: true,
 			// 组件显示顺序
-			order: 4,
+			order: 5,
 			// 组件位置："sticky" 表示粘性定位
 			position: "sticky",
 			// CSS 类名
 			class: "onload-animation",
 			// 动画延迟时间
-			animationDelay: 200,
+			animationDelay: 250,
 			// 响应式配置
 			responsive: {
 				// 折叠阈值：当标签数量超过20个时自动折叠
@@ -408,6 +412,10 @@ export const sakuraConfig: SakuraConfig = {
 		min: 0.5, // 樱花最小尺寸倍数
 		max: 1.1, // 樱花最大尺寸倍数
 	},
+	opacity: {
+		min: 0.3, // 樱花最小不透明度
+		max: 0.9, // 樱花最大不透明度
+	},
 	speed: {
 		horizontal: {
 			min: -1.7, // 水平移动速度最小值
@@ -418,6 +426,7 @@ export const sakuraConfig: SakuraConfig = {
 			max: 2.2, // 垂直移动速度最大值
 		},
 		rotation: 0.03, // 旋转速度
+		fadeSpeed: 0.03, // 消失速度，不应大于最小不透明度
 	},
 	zIndex: 100, // 层级，确保樱花在合适的层级显示
 };
@@ -455,4 +464,13 @@ export const widgetConfigs = {
 	sakura: sakuraConfig,
 	fullscreenWallpaper: fullscreenWallpaperConfig,
 	pio: pioConfig, // 添加 pio 配置
+} as const;
+
+export const umamiConfig = {
+	enabled: false, // 是否显示Umami统计
+	apiKey: "api_XXXXXXXXXX", // 你的API密钥
+	baseUrl: "https://api.umami.is", // Umami Cloud API地址
+	scripts: `
+<script defer src="XXXX.XXX" data-website-id="ABCD1234"></script>
+  `.trim(), // 上面填你要插入的Script,不用再去Layout中插入
 } as const;
