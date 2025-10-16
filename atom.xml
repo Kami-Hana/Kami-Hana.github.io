@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>黄瓜种植园</title>
+  <subtitle>No description</subtitle>
+  <link href="https://kami-hana.github.io/" rel="alternate" type="text/html"/>
+  <link href="https://kami-hana.github.io/atom.xml" rel="self" type="application/atom+xml"/>
+  <id>https://kami-hana.github.io/</id>
+  <updated>2025-10-16T06:30:27.882Z</updated>
+  <language>zh_CN</language>
+  <entry>
+    <title>I Wanna 历代作品博物馆</title>
+    <link href="https://kami-hana.github.io/posts/iwanna/" rel="alternate" type="text/html"/>
+    <id>https://kami-hana.github.io/posts/iwanna/</id>
+    <published>2025-09-13T00:00:00.000Z</published>
+    <updated>2025-09-13T00:00:00.000Z</updated>
+    <summary>这里记录了我创作过的所有 I Wanna 作品</summary>
+    <content type="html"><![CDATA[<h1>第一作：I Wanna Escape Jie</h1>
+<ul>
+<li>成品时间：2022年2月</li>
+<li>发布时间：2022年10月</li>
+<li>发布视频：https://www.bilibili.com/video/BV1st4y1u7pU</li>
+<li>下载链接：https://zhi-luya.lanzoul.com/ih79J0ee4qla</li>
+</ul>
+<p>2022年，貌似是 I Wanna 在 b 站热度大起的时候。在此之前，我虽然也有过制作 I Wanna 的想法，但最后还是不了了之。这年年初，碰巧赶上青默杯的企划，于是我就决定迈出这样的第一步。</p>
+<p>第一作没什么出彩的地方，既没有新奇的想法，也没有惊艳的技术。成品出来以后，我自己也不怎么满意（甚至都做好了被喷的准备）。但出乎意料的是，青默和各位评委给予了一定的肯定和鼓励，激励着我继续学下去，努力做出更好的作品。</p>
+<p>以下是当时的评语：</p>
+<blockquote>
+<p>梗向iw，缺点在于好几处地方找路不行，以及一面无存档保护可能死档，不过总的来说质量还行。（水默ya）</p>
+<p>陷阱大部分都是飞来飞去或者隐藏着等人踩的，创新性不高。有些陷阱难以理解，可能导致卡关。游戏体验还可以。（魔方12139）</p>
+<p>以逃离杰哥为剧情，中间插入了买瓜的梗。难度方面，做得非常的简单，包括最终boss也是白给级别的，应该是这次比赛里最简单的作品了。但是设计方面，无脑的陷阱太多，有些找路的地方没有提示需要自己去试。希望作者下一作可以创新一下陷阱并优化一下提示。（泰格达人）</p>
+<p>中等质量梗坑作，难度适中，可以看出作者比较用心，流程较短。（青默ya）</p>
+</blockquote>
+<p>这一作本来打算雪藏的，但后来有人跟我说想玩一下，所以还是决定在 b 站上公开了。不过 delicious fruit / I wanna wiki 上就没发。</p>
+<h1>第二作：I Wanna Surf the Internet</h1>
+<ul>
+<li>成品时间：2022年5月</li>
+<li>发布时间：2022年7月</li>
+<li>发布视频：https://www.bilibili.com/video/BV1yr4y1M7mj</li>
+<li>通关流程：https://www.bilibili.com/video/BV1Yd4y1S752 | https://www.bilibili.com/video/BV1md4y197YR</li>
+<li>下载链接：https://wwu.lanzoul.com/iGi0s088itkj</li>
+<li>Delicious Fruit：https://delicious-fruit.com/ratings/game_details.php?id=25159</li>
+</ul>
+<p>第二届贺言杯的作品。相比第一作，加了一些新的想法，尤其是结合中学物理、化学知识的相关内容。某些地方的表现形式也更加自然了（比如砖块的消失之类的）。</p>
+<p>以下是当时的评语：</p>
+<blockquote>
+<p>魔方：不太好的陷阱游戏。有一些有潜力的点子，例如物理玩法，磁场偏转的子弹等，但实际应用结果并不太好，所以没有给太高创新分。另外有些地方比较极限或者难以理解，尤其是第二面，要看的东西有点太多了。大怪因为没有发现地球中间能躲所以卡了很长时间。画风上因为全游戏都是纯色背景 + 一种砖（还没做八向贴图），比较乏味，所以得分比较低。</p>
+<p>PP：整体做得很不错，物理也能拿来作坑还是挺新奇的。不过只是文字的坑表现力不够。</p>
+<p>中间有几个坑很难猜到怎么过。有点小解谜，我个人觉得坑作的道中还是尽量不要让人卡关比较好。</p>
+<p>BOSS的设计很有意思，简单又紧张刺激。不过一开始看readme说有3个结局还挺期待剧情的，打完之后感觉结局有点草率。</p>
+</blockquote>
+<p>当然，这一作还有很大的进步空间。不过总体而言，还是得到了很多正反馈的。下面收集了一部分的游玩视频：</p>
+<blockquote>
+<p>【超级坑爹的物理考试！】 https://www.bilibili.com/video/BV13B4y1878x</p>
+<p>【用了金坷垃，小麦亩产一千八！】 https://www.bilibili.com/video/BV1Zd4y1m7SY</p>
+<p>【当华强买瓜遇到杰哥！】 https://www.bilibili.com/video/BV1HG411h73z</p>
+<p>【我在游戏里遇到了杰哥不要！】 https://www.bilibili.com/video/BV1GP411y7vh</p>
+</blockquote>
+<h1>第三作：I Wanna Play Ping Pong with Mokou</h1>
+<ul>
+<li>成品时间：2022年8月</li>
+<li>发布时间：2022年10月</li>
+<li>发布视频：https://www.bilibili.com/video/BV1PG4y1s7Wr | https://www.bilibili.com/video/BV1Ug411h7qQ</li>
+<li>下载链接：https://zhi-luya.lanzoul.com/idNGS0j643wf</li>
+<li>Delicious Fruit：https://delicious-fruit.com/ratings/game_details.php?id=25879</li>
+</ul>
+<p>第二届青默杯的作品。这一作的遗憾之处在于没平衡好道中（即前面的内容）与 final boss 的关系，导致二者的质量并不匹配。做 final boss 花了挺多时间的，但是道中内容没什么好的想法，表现力自然也就一般了。</p>
+<p>写到这里，其实我停下来回去玩了一下这一作。以现在的视角来看，这一作的道中确实做的不好。好几处地方意义不明，只能机械地背板。从表现结果来看，甚至不如前两作。</p>
+<p>回想一下原因，大概率是作品太密集了（每三个月就产出一部作品），导致这一作在制作的时候没什么好点子，只留下了灌水的内容。也许，我真的应该告诉自己：<strong>作品不在多而在精</strong>。</p>
+<p>以下是当时的评语：</p>
+<blockquote>
+<p>比较一般，感觉把重点放在了最终 boss 上，前面的坑并不是很出色，还是无脑坑居多，而且好多坑没有音效，玩起来有点怪。（jicforgot）</p>
+<p>摆坑比较松散不紧凑，boss 华丽有趣但放在整个作品中显得有些本末倒置，不过整体体验是可以的，个人觉得还是不错的。（没事就上天）</p>
+<p>做的还可以，能看出来作者是一作比一作在进步了，但表现力还是不够，创新还是弱了点，很多坑过于平庸，后面可以考虑尝试加入一些新思想新套路，让作品不平淡。（泰格达人）</p>
+</blockquote>
+<h1>第四作：I Wanna Get Memories</h1>
+<ul>
+<li>收尾时间：2023年2月</li>
+<li>发布时间：2023年2月</li>
+<li>发布视频：https://www.bilibili.com/video/BV1AD4y1A76u</li>
+<li>下载链接：https://zhi-luya.lanzoul.com/iKnsk0nzrh8b</li>
+<li>Delicious Fruit：https://delicious-fruit.com/ratings/game_details.php?id=26131</li>
+</ul>
+<p>迫于高考压力，这个时候我已经无力再投入创作。所以，这一作其实是个<strong>半成品</strong>。正如 df 上所说：</p>
+<blockquote>
+<p>Comment A: Its amusing and there's the foundation for something more, but it doesn't go that far.</p>
+<p>Comment B: A bit short, maybe the bus could have used another screen or 2.</p>
+</blockquote>
+<p>就是说，流程太短，一些可以深挖的内容没有去挖掘。尤其是 Stage 2 的 bus，设计之初有很多想法，但是最后都没有实现。</p>
+<p>半途而废的作品，不再过多评价了。</p>
+<h1>第五作：I Wanna 7 Desires（废弃）</h1>
+<p>是的，这一作<strong>废弃</strong>了。本来的设想是七个大关对应七个 desire，但是最后只做了一个“月亮与六便士”，并且也没做好。因为是确定废弃的作品，所以没有公开。本来我还留存着这一作的“遗骸”，但是上个月重装系统的时候把它清掉了。So，现在我手里也没有这一作了，它已经永远地消失了。</p>
+<h1>第六作：I Wanna Collect Achievements</h1>
+<ul>
+<li>成品时间：2025年3月</li>
+<li>发布时间：2025年3月</li>
+<li>发布视频：https://www.bilibili.com/video/BV1NmXzYfEqc</li>
+<li>下载链接：https://komeijiren.lanzoub.com/iybGa2r7fioj (CN) | https://komeijiren.lanzoub.com/i0x3A2r7fjlc (EN) | https://www.mediafire.com/folder/d1cudbm6r1s89/I_wanna_collect_achievements_v0.6 (CN/EN)</li>
+<li>Delicious Fruit：https://delicious-fruit.com/ratings/game_details.php?id=28070</li>
+</ul>
+<p>整理博物馆的时候才发现，原来中间相隔两年了啊......</p>
+<p>游戏引擎方面，前五作用的都是 GM 8 / GMS / GMS 2，不过从这一作开始改用 <strong>Unity</strong> 了。至于为什么嘛，主要还是因为我想学 Unity。系统式学习的见效属实是有点慢，并且略显枯燥，所以我还是决定采用项目式学习，直接上手一个 Unity 项目。又恰好在 df 上搜到了玉兔引擎的 Unity Edition，于是就拿这个项目练手了。</p>
+<p>这一作偏跳刺，因为做的时候没什么坑向的思路。主要还是熟悉一下用法，顺便做了个成就系统，为下一作做准备。难度方面，毕竟我自己的游玩水平也不高，所以应该还是挺新手向的。可能部分隐藏区域略有难度，不过仅此而已了。</p>
+]]></content>
+    <author>
+      <name>折一只纸鹭</name>
+    </author>
+    <category term="Fangame"></category>
+  </entry>
+</feed>
