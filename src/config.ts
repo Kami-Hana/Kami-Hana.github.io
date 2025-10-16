@@ -1,4 +1,3 @@
-import { factory } from "typescript";
 import type {
 	AnnouncementConfig,
 	CommentConfig,
