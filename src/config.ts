@@ -26,7 +26,7 @@ export const siteConfig: SiteConfig = {
 	lang: SITE_LANG,
 
 	themeColor: {
-		hue: 210, // 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
+		hue: 305, // 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
 		fixed: false, // 对访问者隐藏主题色选择器
 	},
 
@@ -471,7 +471,7 @@ export const widgetConfigs = {
 
 export const umamiConfig = {
 	enabled: true, // 是否显示Umami统计
-	apiKey: "api_gq73Avwkj8ZofO4Z8MlIUPbj1VmfpQdr", // 你的API密钥
+	apiKey: import.meta.env.UMAMI_API_KEY || "api_gq73Avwkj8ZofO4Z8MlIUPbj1VmfpQdr", // API密钥优先从环境变量读取，否则使用配置文件中的值
 	baseUrl: "https://us.umami.is/share/XgKv8dQVZxedsqOl", // Umami Cloud API地址
 	scripts: `
 <script defer src="https://cloud.umami.is/script.js" data-website-id="4fd92781-67e8-4c73-bb4e-398ce7d77234"></script>
