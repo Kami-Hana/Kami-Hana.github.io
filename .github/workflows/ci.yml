@@ -1,0 +1,44 @@
+name: CI with SSH Key
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    # 步骤 1: 检出代码
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    # 步骤 2: 设置 SSH 密钥（关键步骤）
+    - name: Setup SSH key
+      uses: webfactory/ssh-agent@v0.8.0
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+    
+    # 步骤 3: 设置 pnpm
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v4
+      with:
+        version: 8
+        run_install: false
+    
+    # 步骤 4: 设置 Node.js
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'pnpm'
+    
+    # 步骤 5: 安装依赖
+    - name: Install dependencies
+      run: pnpm install --frozen-lockfile
+    
+    # 步骤 6: 运行测试（可选）
+    - name: Run tests
+      run: pnpm test
